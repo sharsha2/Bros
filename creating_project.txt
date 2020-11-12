@@ -1,0 +1,10 @@
+Express 
+npm install -g express -generator
+express --hbs [name of the project]
+
+npm install
+
+To run project :
+go to tools 
+command line 
+developer command prompt.
