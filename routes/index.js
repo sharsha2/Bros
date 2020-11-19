@@ -42,4 +42,14 @@ router.get('/wishlist', (req, res, next) => {
 router.get('/bag', (req, res, next) => {
     res.render('bag', { title: 'Bag page' });
 });
+
+/* GET profile page. */
+router.get('/profile', (req, res, next) => {
+    res.render('profile', { title: 'profile page' });
+});
+
+/* GET login page. */
+router.get('/login', (req, res, next) => {
+    res.render('login', { title: 'login page' });
+});
 module.exports = router;
