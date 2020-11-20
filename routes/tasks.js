@@ -50,7 +50,7 @@ router.get('/add', isLoggedIn, (req, res, next) => {
 router.post('/add', isLoggedIn, (req, res, next) => {
     Task.create({
         name: req.body.name,
-        priority: req.body.priority
+        quantity: req.body.quantity
     }, (err, task) => {
         if (err) {
             console.log(err)
@@ -106,18 +106,18 @@ router.get('/edit/:_id', isLoggedIn, (req, res, next) => {
 router.post('/edit/:_id', isLoggedIn, (req, res, next) => {
     var _id = req.params._id
     //parse checkbox to a boolean
-    let complete = false
-    if (req.body.complete === "on") {
-        complete = true
+    let size = false
+    if (req.body.size === "on") {
+        size = true
     }
 
-    console.log('Complete value: ' + req.body.complete)
+    console.log('Complete value: ' + req.body.size)
     //instantiate a Task object with the new values from the form submission
     var task = new Task({
         _id: _id,
         name: req.body.name,
-        priority: req.body.priority,
-        complete: complete
+        quantity: req.body.quantity,
+        size: size
     })
     //update document with selected id, passing new task object to replace old values
     Task.update({ _id: _id }, task, (err) => {

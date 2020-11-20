@@ -5,11 +5,11 @@ const taskSchema = new mongoose.Schema({
         required: 'Name is Required',
         trim: true
     },
-    complete: {
+    size: {
         type: Boolean,
         default: false
     },
-    priority: {
+    quantity: {
         type: Number
     }
 })

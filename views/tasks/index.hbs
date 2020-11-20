@@ -1,19 +1,19 @@
-<h3>Task</h3>
+<h3>Mens Collection</h3>
 
-<a href="/tasks/add"> Add a New task</a>
+<a href="/tasks/add"> Add a New mens collection</a>
 <table class="table table-striped table-hover">
     <tr>
         <th>Name</th>
-        <th>Priority</th>
-        <th>Complete</th>
+        <th>Quantity</th>
+        <th>Size</th>
         <th>Actions</th>
     </tr>
 
     {{#each tasks}}
     <tr>
         <td> {{this.name}} </td>
-        <td> {{this.priority}} </td>
-        <td> {{this.complete}} </td>
+        <td> {{this.quantity}} </td>
+        <td> {{this.size}} </td>
         <td>
             <a href="/tasks/edit/{{ this._id }}"> Edit </a>|
             <a href="/tasks/delete/{{ this._id }}" class="test-danger delete"> Delete </a>
@@ -23,24 +23,3 @@
     {{/each}}
 
 </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

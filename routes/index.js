@@ -8,12 +8,12 @@ const passport = require('passport')
 const User = require('../models/user')
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Bro\'s Shoppy ' });
+router.get('/', function (req, res, next) {
+    res.render('index', { title: 'Bro\'s Shoppy ' });
 });
 
 /* GET Men page. */
-router.get('/men' ,(req, res, next)=> {
+router.get('/men', (req, res, next) => {
     res.render('men', { title: 'Men\'s page' });
 });
 

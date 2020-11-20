@@ -1,4 +1,4 @@
-<h1> Edit Tasks Details</h1>
+<h3> Edit men's Details</h3>
 
 <form method="post">
     <fieldset class="form-group">
@@ -10,11 +10,11 @@
         <checkbox name="complete" id="complete" />
     </fieldset>-->
     <fieldset class="form-group">
-        <label class="control-label col-md-2"> Priority: *</label>
-        <select name="priority" id="priority">
+        <label class="control-label col-md-2"> quantity: *</label>
+        <select name="quantity" id="quantity">
             <script>
                 //ref the selected element
-                var priority = document.getElementById('priority')
+                var quantity = document.getElementById('quantity')
                 for (var i = 1; i <= 5; i++)
                 {
                     //create a new option inside the select element
@@ -22,22 +22,22 @@
                     //display the current counter as athe new option text
                     option.innerHTML = i.toString()
                     //if the new option matches the task priority mark the option as selected
-                    if ({{task.priority}} == i.toString())
+                    if ({{ task.quantity}} == i.toString())
                     {
                         option.selected = true
                     }
                     //add new <option> element to the <select> object
-                    priority.append(option)
+                    quantity.append(option)
                 }
             </script>
         </select>
     </fieldset>
     <fieldset>
-        <label class="control-label col-md-2">Complete: </label>
-        {{#if task.complete}}
-        <input type="checkbox" id="complete" name="complete" checked="checked" />
+        <label class="control-label col-md-2">size: </label>
+        {{#if task.size}}
+        <input type="checkbox" id="size" name="size" checked="checked" />
         {{else}}
-        <input type="checkbox" id="complete" name="complete" />
+        <input type="checkbox" id="size" name="size" />
         {{/if}}
     </fieldset>
     <input type="hidden" name="_id" id="_id" value="{{tasks._id}}" />
