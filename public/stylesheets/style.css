@@ -27,3 +27,52 @@ img {
     
     display: block;
 }
+
+/*FOOTER START*/
+footer {
+    color: black;
+}
+
+#footera {
+    color: #CDC9C9;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+    #footera:hover {
+        color: black;
+        transition: all 0.3s ease;
+    }
+
+.footer-social {
+    font-size: 1.5em;
+    padding: 5px;
+    text-align: center;
+}
+
+
+i:hover {
+    color: grey;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+i {
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 24px;
+}
+
+.fa-twitter {
+    color: aqua;
+}
+
+.fa-instagram {
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    box-shadow: 0px 3px 8px rgba(0,0,0,.25);
+}
+
+/*FOOTER END*/ 

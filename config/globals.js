@@ -8,7 +8,7 @@ module.exports =
             clientID: '574961970497-mpsfq6u87crhh3q7kocl9ddonkvlh3in.apps.googleusercontent.com',
             clientSecret: 'kw9Qb1lvFXxbSN1-08-8gUWQ',
             callbackURL: 'http://localhost:3000/google/callback',
-            callbackURL: 'https://bros-shopy.herokuapp.com/google/callback'
+            //callbackURL: 'https://bros-shopy.herokuapp.com/google/callback'
         },
         'facebook': {
             clientID: '122228702843051',
