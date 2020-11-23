@@ -6,7 +6,9 @@
     <link rel='stylesheet' href="/stylesheets/bootstrap.min.css" />
     <link rel='stylesheet' href="/stylesheets/style.css" />
     <link rel='stylesheet' , href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' />
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </head>
 <body>
@@ -14,7 +16,7 @@
 
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
         <!-- Brand -->
-        <a class="navbar-brand" href="/">Project</a>
+        <a class="navbar-brand" href="/"><img src="/images/bros1.PNG" , alt="Logo" style="width:40px"></a>
 
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -25,7 +27,7 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="/men">men</a>
+                    <a class="nav-link" href="/men">Men</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/Women">Women</a>
@@ -38,6 +40,11 @@
                 </li>
 
 
+                <form class="form-inline my-2 my-lg-0" action="/men">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+
 
 
 
@@ -46,6 +53,8 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/tasks">Tasks</a>
                 </li>
+
+                
 
                 {{/if}}
             </ul>
@@ -68,13 +77,13 @@
 
                 {{else}}
                 <li class="nav-item">
-                    <a class="nav-link" href="/profile"><img src="/images/profile1.png"><span class="caption">Profile</span></a>
+                    <a class="nav-link" href="/profile"><img src="/images/profile1.png" alt="Google" width="25px" height="20px"><span class="caption">Profile</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/wishlist"><img src="/images/wishlist1.png"><span class="caption">WishList</span></a>
+                    <a class="nav-link" href="/wishlist"><img src="/images/wishlist1.png" alt="Google" width="25px" height="20px"><span class="caption">WishList</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/bag"><img src="/images/bag1.png"><span class="caption">Bag</span></a>
+                    <a class="nav-link" href="/bag"><img src="/images/bag1.png" alt="Google" width="25px" height="20px"><span class="caption">Bag</span></a>
                 </li>
 
                 {{/if}}

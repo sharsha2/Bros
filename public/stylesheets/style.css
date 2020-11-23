@@ -17,11 +17,7 @@ div.item {
     width: 100px;
 }
 
-img {
-    width: 25px;
-    height: 20px;
-    align-content:center;
-}
+
 
 .caption {
     /* Make the caption a block so it occupies its own line. */
