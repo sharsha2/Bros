@@ -9,42 +9,65 @@ const User = require('../models/user')
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-    res.render('index', { title: 'Bro\'s Shoppy ' });
+    res.render('index', {
+        title: 'Bro\'s Shoppy ',
+        user: req.user
+    });
 });
 
 /* GET Men page. */
 router.get('/men', (req, res, next) => {
-    res.render('men', { title: 'Men\'s page' });
+    res.render('men', {
+        title: 'Men\'s page',
+        user: req.user
+    });
 });
 
 /* GET Women page. */
 router.get('/women', (req, res, next) => {
-    res.render('women', { title: 'Women\'s page' });
+    res.render('women', {
+        title: 'Women\'s page',
+        user: req.user
+    });
 });
 
 /* GET Kids page. */
 router.get('/kids', (req, res, next) => {
-    res.render('kids', { title: 'kid\'s page' });
+    res.render('kids', {
+        title: 'kid\'s page',
+        user: req.user
+    });
 });
 
 /* GET Offers page. */
 router.get('/offers', (req, res, next) => {
-    res.render('offers', { title: 'Offer\'s page' });
+    res.render('offers', {
+        title: 'Offer\'s page',
+        user: req.user
+    });
 });
 
 /* GET Profile page. */
 router.get('/profile', (req, res, next) => {
-    res.render('profile', { title: 'Profile page' });
+    res.render('profile', {
+        title: 'Profile page',
+        user: req.user
+    });
 });
 
 /* GET Wishlist page. */
 router.get('/wishlist', (req, res, next) => {
-    res.render('wishlist', { title: 'Wishlist page' });
+    res.render('wishlist', {
+        title: 'Wishlist page',
+        user: req.user});
 });
 
 /* GET Bag page. */
 router.get('/bag', (req, res, next) => {
-    res.render('bag', { title: 'Bag page' });
+    res.render('bag', {
+        title: 'Bag page',
+        user: req.user
+    });
 });
 
 /* GET profile page. */
@@ -100,5 +123,34 @@ router.get('/logout', (req, res, next) => {
     req.logout()
     res.redirect('/login')
 })
+
+// GET / Google /
+// Check if the User is already logged into/with Google, if not invoke then Google Signin
+router.get('/google', passport.authenticate('google', {
+    scope: ['profile']
+}),
+    (req, res) => { })
+
+//Get / google/callback
+router.get('/google/callback', passport.authenticate('google', {
+    failureRedirect: '/login'
+}),
+    (req, res) => {
+        res.redirect('/tasks')
+    })
+
+// GET / Facebook/
+// Check if the User is already logged into/with Facebook, if not invoke then Facebook Signin
+router.get('/facebook', passport.authenticate('facebook'),
+    (req, res) => { }
+)
+
+//Get / facebook/callback
+router.get('/facebook/callback', passport.authenticate('facebook', {
+    failureRedirect: '/login'
+}),
+    (req, res) => {
+        res.redirect('/tasks')
+    })
 
 module.exports = router;

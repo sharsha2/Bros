@@ -1,12 +1,14 @@
 {
   "ExpandedNodes": [
     "",
+    "\\config",
+    "\\models",
     "\\public",
-    "\\public\\images",
     "\\public\\stylesheets",
     "\\routes",
-    "\\views"
+    "\\views",
+    "\\views\\tasks"
   ],
-  "SelectedNode": "\\routes\\users.js",
+  "SelectedNode": "\\views\\tasks",
   "PreviewInSolutionExplorer": false
 }

@@ -10,3 +10,9 @@ command line
 developer command prompt.
 
 passport -> npm i passport passport-local passport-local-mongoose express-session --save
+
+npm oauthentaication for google 
+npm i passport-google-oauth20
+
+npm 0authentication for facebook.
+npm i passport-facebook.
