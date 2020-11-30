@@ -40,8 +40,8 @@
                 </li>
 
 
-                <form class="form-inline my-2 my-lg-0" action="/men">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <form class="form-inline my-2 my-lg-0" action="/tasks">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search for products, brands and more">
                     <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
                 </form>
 
@@ -51,7 +51,7 @@
                 {{#if user}}
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/tasks">Tasks</a>
+                    <a class="nav-link" href="/tasks">Collections</a>
                 </li>
 
                 
@@ -63,27 +63,27 @@
 
                 {{#if user}}
                 <li class="nav-item">
-                    <a class="nav-link" href="/wishlist"><img src="/images/wishlist1.png"><span class="caption">WishList</span></a>
+                    <a class="nav-link" href="/wishlist"><img src="/images/wishlist1.png" alt="wishlist" width="25px" height="20px"><span class="caption">WishList</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/bag"><img src="/images/bag1.png"><span class="caption">Bag</span></a>
+                    <a class="nav-link" href="/bag"><img src="/images/bag1.png" alt="bag" width="25px" height="20px"><span class="caption">Bag</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link"><img src="/images/profile1.png"><span class="caption">{{user.username}}</span></a>
+                    <a class="nav-link"><img src="/images/profile1.png" alt="profile" width="25px" height="20px"><span class="caption">{{user.username}}</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/logout"><img src="/images/logout.png"><span class="caption">Logout</span></a>
+                    <a class="nav-link" href="/logout"><img src="/images/logout.png" alt="logout" width="25px" height="20px"><span class="caption">Logout</span></a>
                 </li>
 
                 {{else}}
                 <li class="nav-item">
-                    <a class="nav-link" href="/profile"><img src="/images/profile1.png" alt="Google" width="25px" height="20px"><span class="caption">Profile</span></a>
+                    <a class="nav-link" href="/profile"><img src="/images/profile1.png" alt="profile" width="25px" height="20px"><span class="caption">Profile</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/wishlist"><img src="/images/wishlist1.png" alt="Google" width="25px" height="20px"><span class="caption">WishList</span></a>
+                    <a class="nav-link" href="/wishlist"><img src="/images/wishlist1.png" alt="wishlist" width="25px" height="20px"><span class="caption">WishList</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/bag"><img src="/images/bag1.png" alt="Google" width="25px" height="20px"><span class="caption">Bag</span></a>
+                    <a class="nav-link" href="/bag"><img src="/images/bag1.png" alt="bag" width="25px" height="20px"><span class="caption">Bag</span></a>
                 </li>
 
                 {{/if}}
@@ -99,7 +99,7 @@
             &copy
             <script type="text/javascript">
                 document.write(" " + new Date().getFullYear() + " ");
-            </script>Copyright: <a id="footera">Harsha//Karuturi</a>
+            </script>Copyright: <a id="footera">Bros Shopy - Keep in Touch</a>
         </div>
         <div class="footer-social">
             <a href="https://www.instagram.com/harsha_karuturi/"><i class="fa fa-instagram"></i></a>
